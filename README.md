@@ -2,7 +2,7 @@
       <img src="" width="" alt=""/>
 </p>
 
-<h1 align="center">Fluttermy</h1>
+<h1 align="center">fludemy</h1>
 
 <h2 align="center">Topics 📋</h2>
 
@@ -42,10 +42,10 @@
    First of all, correctly configure the Flutter Web development environment on your machine, see https://flutter.dev/docs/get-started/install
    
    - Clone this repository:
-   $ git clone https://github.com/felipecastrosales/Fluttermy Fluttermy
+   $ git clone https://github.com/felipecastrosales/fludemy fludemy
 
    - Enter in directory:
-   $ cd Fluttermy
+   $ cd fludemy
 
    - For install dependencies:
    $ flutter pub get

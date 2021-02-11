@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.fluttermy">
+    package="com.example.fludemy">
    <application
-        android:label="fluttermy"
+        android:label="fludemy"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
