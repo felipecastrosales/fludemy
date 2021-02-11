@@ -8,7 +8,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
         builder: (context, constraints) {
           print(
             'biggest ${constraints.biggest} smallest ${constraints.smallest}');
-          return Row( 
+          return Row(
             children: [
               Expanded(
                 child: Container(
@@ -19,8 +19,9 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      IconButton( 
-                        icon: Icon(Icons.search, color: Colors.grey[800]),
+                      const SizedBox(width: 8),
+                      IconButton(
+                        icon: Icon(Icons.search, color: Colors.grey[700]),
                         onPressed: () {}
                       ),
                       Expanded(
@@ -28,6 +29,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                           decoration: InputDecoration(
                             border: InputBorder.none,
                             hintText: '  Pesquise um curso aqui  ',
+                            isCollapsed: true,
                           ),
                         ),
                       ),
@@ -35,6 +37,34 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                   ),
                 ),
               ),
+              if (constraints.maxWidth >= 315) ...[
+                const SizedBox(width: 32),
+                FlatButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Aprender', 
+                    style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                      color: Colors.grey[100],
+                      letterSpacing: 1.1,
+                    ),
+                  ),
+                ),
+              ],
+              if (constraints.maxWidth >= 500) ...[
+                const SizedBox(width: 8),
+                FlatButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Flutter', 
+                    style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                      color: Colors.grey[100],
+                      letterSpacing: 1.1,
+                    ),
+                  ),
+                ),
+              ],
             ],
           );
         },

@@ -4,7 +4,7 @@ class MobileAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: FlutterLogo(),
+      title: FlutterLogo(size: 50),
       centerTitle: true,
       backgroundColor: Colors.black,
       actions: [

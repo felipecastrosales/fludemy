@@ -12,7 +12,7 @@ class WebAppBar extends StatelessWidget {
         children: [
           FlutterLogo(size: 40),
           Text(
-            'Fluttermy',
+            'FLUdemy',
             style: TextStyle(fontWeight: FontWeight.w800), 
           ),
           const SizedBox(width: 24),
