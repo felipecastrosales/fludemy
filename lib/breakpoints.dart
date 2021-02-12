@@ -1,1 +1,1 @@
-const mobileBreakpoint = 700;
+const mobileBreakpoint = 650;
