@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../breakpoints.dart';
 import 'widgets/appbar/mobile_app_bar.dart';
 import 'widgets/appbar/web_app_bar.dart';
+import 'widgets/sections/top_section.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -25,7 +26,9 @@ class HomePage extends StatelessWidget {
                 maxWidth: 1200,
               ),
               child: ListView(
-                
+                children: [
+                  TopSection(),
+                ],
               ),
             ),
           ),

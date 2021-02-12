@@ -30,7 +30,7 @@ class WebAppBar extends StatelessWidget {
               textColor: Colors.white,
               borderSide: BorderSide(color: Colors.white, width: 1.5),
               child: Text(
-                '  Fazer login  ',
+                '  Log in  ',
                 style: TextStyle(fontWeight: FontWeight.w600),
               ),
             ),
@@ -43,7 +43,7 @@ class WebAppBar extends StatelessWidget {
               color: Colors.white,
               textColor: Colors.black,
               child: Text(
-                '  Cadastre-se  ',
+                '  Sign up  ',
                 style: TextStyle(fontWeight: FontWeight.w800),
               ),
             ),
