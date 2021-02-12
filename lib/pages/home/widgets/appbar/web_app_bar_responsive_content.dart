@@ -28,7 +28,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: '  Pesquise um curso aqui  ',
+                            hintText: ' Search for anything... ',
                             isCollapsed: true,
                           ),
                         ),
@@ -42,7 +42,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 FlatButton(
                   onPressed: () {},
                   child: Text(
-                    'Aprender', 
+                    'Learn', 
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                       color: Colors.grey[100],
