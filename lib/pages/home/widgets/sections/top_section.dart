@@ -16,10 +16,7 @@ class TopSection extends StatelessWidget {
               children: [
                 AspectRatio(
                   aspectRatio: 7 / 2,
-                  child: Image.network(
-                    'https://images.pexels.com/photos/892757/pexels-photo-892757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-                    fit: BoxFit.cover,
-                  ),
+                  child: TopSectionImage(),
                 ),
                 Positioned(
                   top: 64,
@@ -44,7 +41,7 @@ class TopSection extends StatelessWidget {
                           ),
                           const SizedBox(height: 16),
                           Text(
-                            'Let\'s Learn Flutter! ' 
+                            'Let\'s Learn Flutter! '
                             'Create amazing things with a single code.',
                             style: TextStyle(
                               fontWeight: FontWeight.w800,
@@ -72,10 +69,7 @@ class TopSection extends StatelessWidget {
                 SizedBox(
                   height: 250,
                   width: double.infinity,
-                  child: Image.network(
-                    'https://images.pexels.com/photos/892757/pexels-photo-892757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-                    fit: BoxFit.cover,
-                  ),
+                  child: TopSectionImage(),
                 ),
                 Positioned(
                   top: 42,
@@ -91,16 +85,15 @@ class TopSection extends StatelessWidget {
                           Text(
                             'Learn Flutter with this course',
                             style: TextStyle(
-                              fontWeight: FontWeight.w800,
-                              fontSize: 28,
-                              color: Colors.grey[50],
-                              letterSpacing: 1.2,
-                              height: 0.9
-                            ),
+                                fontWeight: FontWeight.w800,
+                                fontSize: 28,
+                                color: Colors.grey[50],
+                                letterSpacing: 1.2,
+                                height: 0.9),
                           ),
                           const SizedBox(height: 12),
                           Text(
-                            'Let\'s Learn Flutter! ' 
+                            'Let\'s Learn Flutter! '
                             'Create amazing things with a single code.',
                             style: TextStyle(
                               fontWeight: FontWeight.w700,
@@ -119,8 +112,57 @@ class TopSection extends StatelessWidget {
             ),
           );
         }
-        return Container();
+        return Column(
+          children: [
+            AspectRatio(
+              aspectRatio: 7 / 2,
+              child: TopSectionImage()
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                children: [
+                  Text(
+                    'Learn Flutter with this course',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontWeight: FontWeight.w800,
+                      fontSize: 28,
+                      color: Colors.grey[50],
+                      letterSpacing: 1.2,
+                      height: 0.95
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    'Let\'s Learn Flutter! '
+                    'Create amazing things with a single code.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontWeight: FontWeight.w700,
+                      fontSize: 16,
+                      color: Colors.grey[100],
+                      letterSpacing: 1.1,
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  CustomSearchField(),
+                ],
+              ),
+            ),
+          ],
+        );
       },
+    );
+  }
+}
+
+class TopSectionImage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Image.network(
+      'https://images.pexels.com/photos/892757/pexels-photo-892757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      fit: BoxFit.cover,
     );
   }
 }
