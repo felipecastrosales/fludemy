@@ -9,9 +9,9 @@ class TopSection extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         final maxWidth = constraints.maxWidth;
-        if (maxWidth >= 1000) {
+        if (maxWidth >= tabletBreakpoint) {
           return AspectRatio(
-            aspectRatio: 3.2,
+            aspectRatio: 7 / 2,
             child: Stack(
               children: [
                 AspectRatio(
@@ -19,10 +19,10 @@ class TopSection extends StatelessWidget {
                   child: TopSectionImage(),
                 ),
                 Positioned(
-                  top: 64,
+                  top: 56,
                   left: 50,
                   child: Card(
-                    color: Colors.black,
+                    color: Colors.black87,
                     elevation: 16,
                     child: Container(
                       padding: EdgeInsets.all(24),
@@ -30,7 +30,7 @@ class TopSection extends StatelessWidget {
                       child: Column(
                         children: [
                           Text(
-                            'Learn Flutter with this course',
+                            'Let\'s learn Flutter with these courses',
                             style: TextStyle(
                               fontWeight: FontWeight.w800,
                               fontSize: 32,
@@ -41,8 +41,8 @@ class TopSection extends StatelessWidget {
                           ),
                           const SizedBox(height: 16),
                           Text(
-                            'Let\'s Learn Flutter! '
-                            'Create amazing things with a single code.',
+                            'The Flutter is amazing! '
+                            'Create amazing things with the Flutter Framework.',
                             style: TextStyle(
                               fontWeight: FontWeight.w800,
                               fontSize: 16,
@@ -63,19 +63,19 @@ class TopSection extends StatelessWidget {
         }
         if (maxWidth >= mobileBreakpoint) {
           return SizedBox(
-            height: 320,
+            height: 300,
             child: Stack(
               children: [
                 SizedBox(
-                  height: 250,
+                  height: 300,
                   width: double.infinity,
                   child: TopSectionImage(),
                 ),
                 Positioned(
-                  top: 42,
-                  left: 36,
+                  top: 32,
+                  left: 32,
                   child: Card(
-                    color: Colors.black,
+                    color: Colors.black87,
                     elevation: 16,
                     child: Container(
                       padding: EdgeInsets.all(20),
@@ -83,18 +83,18 @@ class TopSection extends StatelessWidget {
                       child: Column(
                         children: [
                           Text(
-                            'Learn Flutter with this course',
+                            'Let\'s learn Flutter with these courses',
                             style: TextStyle(
-                                fontWeight: FontWeight.w800,
-                                fontSize: 28,
-                                color: Colors.grey[50],
-                                letterSpacing: 1.2,
-                                height: 0.9),
+                              fontWeight: FontWeight.w800,
+                              fontSize: 28,
+                              color: Colors.grey[50],
+                              letterSpacing: 1.2,
+                            ),
                           ),
                           const SizedBox(height: 12),
                           Text(
-                            'Let\'s Learn Flutter! '
-                            'Create amazing things with a single code.',
+                            'The Flutter is amazing! '
+                            'Create amazing things with the Flutter Framework.',
                             style: TextStyle(
                               fontWeight: FontWeight.w700,
                               fontSize: 16,
@@ -123,20 +123,19 @@ class TopSection extends StatelessWidget {
               child: Column(
                 children: [
                   Text(
-                    'Learn Flutter with this course',
+                    'Let\'s learn Flutter with these courses',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontWeight: FontWeight.w800,
                       fontSize: 28,
                       color: Colors.grey[50],
                       letterSpacing: 1.2,
-                      height: 0.95
                     ),
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Let\'s Learn Flutter! '
-                    'Create amazing things with a single code.',
+                    'The Flutter is amazing! '
+                    'Create amazing things with the Flutter Framework.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontWeight: FontWeight.w700,
