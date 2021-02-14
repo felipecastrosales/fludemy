@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:auto_size_text/auto_size_text.dart';
+
 class CourseItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -11,27 +13,45 @@ class CourseItem extends StatelessWidget {
           fit: BoxFit.fitWidth,
         ),
         const SizedBox(height: 4),
-        Text(
-          'Responsiveness in the Flutter | Mobile, Tablet, Web and Desktop',
-          style: TextStyle(
-            fontWeight: FontWeight.w800,
-            fontSize: 18,
-            color: Colors.grey[100],
+        Flexible(
+          child: LayoutBuilder(
+            builder: (_, constraints) {
+              return AutoSizeText(
+                'Responsiveness in the Flutter | '
+                'Mobile, Tablet, Web and Desktop',
+                maxLines: 3,
+                presetFontSizes: [16, 14, 12],
+                overflowReplacement: Text(
+                  'Responsiveness',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w800,
+                    color: Colors.grey[100],
+                    fontSize: 16,
+                    height: 2,
+                  ),
+                ),
+                style: TextStyle(
+                  fontWeight: FontWeight.w800,
+                  fontSize: 16,
+                  color: Colors.grey[100],
+                ),
+              );
+            }
           ),
         ),
         Text(
           'Daniel Ciolfi and Felipe Sales',
           style: TextStyle(
-            fontWeight: FontWeight.w600,
-            fontSize: 14,
-            color: Colors.grey[500],
+            fontWeight: FontWeight.w700,
+            fontSize: 12,
+            color: Colors.grey[400],
           ),
         ),
         Text(
-          '\$22,90',
+          'R\$22,90',
           style: TextStyle(
-            fontWeight: FontWeight.w500,
-            fontSize: 15,
+            fontWeight: FontWeight.w800,
+            fontSize: 12,
             color: Colors.grey[100],
           ),
         ),
