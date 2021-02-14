@@ -10,11 +10,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'FLUdemy',
+      title: 'FLUdemy - Courses',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: Colors.black,
+        scaffoldBackgroundColor: const Color(0XFF0A0A0A),
       ),
       home: HomePage(),
     );

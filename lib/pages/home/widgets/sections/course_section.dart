@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../breakpoints.dart';
+import 'course_item.dart';
 
 class CourseSection extends StatelessWidget {
   @override
@@ -14,14 +15,13 @@ class CourseSection extends StatelessWidget {
             mainAxisSpacing: 16,
           ),
           padding: EdgeInsets.symmetric(
-            vertical: 16, 
-            horizontal: constraints.maxWidth >= tabletBreakpoint ? 0 : 16
-          ),
+              vertical: 16,
+              horizontal: constraints.maxWidth >= tabletBreakpoint ? 0 : 16),
           physics: NeverScrollableScrollPhysics(),
           itemCount: 20,
           shrinkWrap: true,
           itemBuilder: (context, index) {
-            return Container(color: Colors.red);
+            return CourseItem();
           },
         );
       },
