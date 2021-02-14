@@ -115,7 +115,7 @@ class TopSection extends StatelessWidget {
         return Column(
           children: [
             AspectRatio(
-              aspectRatio: 7 / 2,
+              aspectRatio: 10 / 3,
               child: TopSectionImage()
             ),
             Padding(

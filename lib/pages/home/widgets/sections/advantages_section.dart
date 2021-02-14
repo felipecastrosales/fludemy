@@ -37,7 +37,7 @@ class AdvantagesSection extends StatelessWidget {
     }
 
     return Container(
-      padding: const EdgeInsets.fromLTRB(16, 0, 16, 24),
+      padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
       decoration: BoxDecoration(
         border: Border(bottom: BorderSide(color: Colors.grey[700])),
       ),
