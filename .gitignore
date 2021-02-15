@@ -62,7 +62,7 @@ analysis_benchmark.json
 .packages
 .pub-cache/
 .pub/
-build/
+
 flutter_*.png
 linked_*.ds
 unlinked.ds
@@ -136,7 +136,6 @@ yarn-debug.log*
 yarn-error.log*
 firebase-debug.log*
 firebase-debug.*.log*
-firebase.json
 .firebaserc
 
 # Firebase cache

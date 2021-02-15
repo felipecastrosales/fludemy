@@ -119,7 +119,7 @@ class TopSection extends StatelessWidget {
               child: TopSectionImage()
             ),
             Padding(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
               child: Column(
                 children: [
                   Text(
