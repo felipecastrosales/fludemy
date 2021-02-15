@@ -136,7 +136,6 @@ yarn-debug.log*
 yarn-error.log*
 firebase-debug.log*
 firebase-debug.*.log*
-firebase.json
 .firebaserc
 
 # Firebase cache
