@@ -10,7 +10,7 @@ class WebAppBar extends StatelessWidget {
       toolbarHeight: 80,
       title: Row(
         children: [
-          FlutterLogo(size: 40),
+          Image.asset('assets/fu.png', height: 40, width: 40),
           Text(
             'FLUdemy',
             style: TextStyle(fontWeight: FontWeight.w800), 
