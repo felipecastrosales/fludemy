@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
+import 'package:device_preview/device_preview.dart';
+
 import 'pages/home/home_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(DevicePreview(builder: (_) => MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -16,6 +18,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: const Color(0XFF0A0A0A),
       ),
+      builder: DevicePreview.appBuilder,
+      locale: DevicePreview.locale(context),
       home: HomePage(),
     );
   }
