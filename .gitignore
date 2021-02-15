@@ -2,7 +2,6 @@
 test
 integration_test
 public
-.github
 
 #firebase
 google-services.json
