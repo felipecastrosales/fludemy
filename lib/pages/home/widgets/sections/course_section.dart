@@ -15,8 +15,8 @@ class CourseSection extends StatelessWidget {
             mainAxisSpacing: 16,
           ),
           padding: EdgeInsets.symmetric(
-              vertical: 16,
-              horizontal: constraints.maxWidth >= tabletBreakpoint ? 0 : 16),
+            vertical: 16,
+            horizontal: constraints.maxWidth >= tabletBreakpoint ? 0 : 16),
           physics: NeverScrollableScrollPhysics(),
           itemCount: 20,
           shrinkWrap: true,

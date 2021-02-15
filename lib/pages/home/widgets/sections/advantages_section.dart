@@ -7,24 +7,24 @@ class AdvantagesSection extends StatelessWidget {
       return Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(iconData, color: Colors.grey[50], size: 48),
+          Icon(iconData, color: Colors.grey[50], size: 50),
           SizedBox(width: 8),
           Column(
             children: [
               Text(
                 title, 
                 style: TextStyle(
-                  fontSize: 16, 
+                  fontSize: 14, 
                   fontWeight: FontWeight.w800, 
                   color: Colors.grey[50],
                   letterSpacing: 1.1,
-                  height: 0.4,
+                  height: 0.25,
                 ),
               ),
               Text(
                 subtitle, 
                 style: TextStyle(
-                  fontSize: 14, 
+                  fontSize: 12, 
                   fontWeight: FontWeight.w600, 
                   color: Colors.grey[50],
                   letterSpacing: 1.2,
@@ -37,7 +37,7 @@ class AdvantagesSection extends StatelessWidget {
     }
 
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
+      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
       decoration: BoxDecoration(
         border: Border(bottom: BorderSide(color: Colors.grey[700])),
       ),
