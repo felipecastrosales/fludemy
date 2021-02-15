@@ -109,14 +109,15 @@ class AdvantagesSection extends StatelessWidget {
             border: Border(bottom: BorderSide(color: Colors.grey[700])),
           ),
           child: Wrap(
-            alignment: WrapAlignment.center,
+            alignment: WrapAlignment.spaceEvenly,
+            runSpacing: 16,
+            spacing: 32,
             children: [
               buildVerticalAdvantage(
                 Icons.connect_without_contact, 
                 '+100.000 developers', 
                 'Awesome!'
               ),
-              const SizedBox(width: 16),
               buildVerticalAdvantage(
                 Icons.card_membership, 
                 'Certificate of Complete', 

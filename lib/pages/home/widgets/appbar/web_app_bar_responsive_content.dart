@@ -6,8 +6,6 @@ class WebAppBarResponsiveContent extends StatelessWidget {
     return Expanded(
       child: LayoutBuilder(
         builder: (context, constraints) {
-          print(
-            'biggest ${constraints.biggest} smallest ${constraints.smallest}');
           return Row(
             children: [
               Expanded(
