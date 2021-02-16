@@ -119,7 +119,7 @@ class TopSection extends StatelessWidget {
               child: TopSectionImage()
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+              padding: const EdgeInsets.all(16),
               child: Column(
                 children: [
                   Text(
@@ -144,10 +144,12 @@ class TopSection extends StatelessWidget {
                       letterSpacing: 1.1,
                     ),
                   ),
-                  const SizedBox(height: 16),
-                  CustomSearchField(),
                 ],
               ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: CustomSearchField(),
             ),
           ],
         );
@@ -159,8 +161,8 @@ class TopSection extends StatelessWidget {
 class TopSectionImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Image.network(
-      'https://images.pexels.com/photos/892757/pexels-photo-892757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    return Image.asset(
+      'assets/app.jpg',
       fit: BoxFit.cover,
     );
   }

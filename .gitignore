@@ -1,12 +1,13 @@
 #Repository
 test
 integration_test
-public
+.github
 
 #firebase
 google-services.json
 firebase-config.js
 manifest.json
+firebase.json
 
 # Miscellaneous
 *.class
