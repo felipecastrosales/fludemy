@@ -8,8 +8,8 @@ class CourseItem extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Image.network(
-          'https://img-a.udemycdn.com/course/240x135/3798106_fea1.jpg?9WEnb7sEOnp2JpUAA2FUKCH-lk4ciVnoL7zt-3Ytz8z5IPx_06sfOF2-qJrr7vFbrIHi97_5mVka2tQS1i4DUaNzSGxxwd6HOMJYGpeyYANIG-uPgQHIG4kfflNLbw',
+        Image.asset(
+          'assets/course.jpg',
           fit: BoxFit.fitWidth,
         ),
         const SizedBox(height: 4),
