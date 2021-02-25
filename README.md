@@ -29,7 +29,7 @@
 
 ---
 
-<h2 align="center">Preview 📱</h2>
+<h2 align="center"><a href="https://fludemy.web.app/#/" target="_blank">Preview 📱</a></h2>
 
 <p align="center">
    
@@ -101,7 +101,7 @@
 
 ---
 
-   >This project was developed with ❤️ by **[@Felipe Sales](https://www.linkedin.com/in/felipecastrosales/)**, with the instructor **[@Daniel Ciolfi](https://linkedin.com/in/danielciolfi)**, in the course  **["Responsividade no Flutter | Mobile, Tablet, Web e Desktop"](https://www.udemy.com/course/responsividade-flutter/?referralCode=A3737FD68BCAFEFCE3C8)**.<br>
+   >This project was developed with ❤️ by **[@Felipe Sales](https://www.linkedin.com/in/felipecastrosales/)**, with the instructor **[@Daniel Ciolfi](https://linkedin.com/in/danielciolfi)**, in the course  **["Responsividade no Flutter | Mobile, Tablet, Web e Desktop"](https://www.udemy.com/course/responsividade-flutter/?referralCode=A3737FD68BCAFEFCE3C8)** on **[Udemy](https://www.udemy.com/)**.<br>
    If it helped you, give ⭐, contribute, it will help me too 😉
 
 ---
