@@ -25,23 +25,33 @@ class WebAppBar extends StatelessWidget {
           const SizedBox(width: 16),
           SizedBox(
             height: 38,
-            child: OutlineButton(
+            child: OutlinedButton(
               onPressed: () {},
-              textColor: Colors.white,
-              borderSide: BorderSide(color: Colors.white, width: 1.5),
+              style: ButtonStyle(
+                side: MaterialStateProperty.resolveWith<BorderSide>(
+                  (states) {
+                    return BorderSide(color: Colors.white, width: 1.5);
+                  },
+                ),
+              ),
               child: Text(
                 '  Log in  ',
-                style: TextStyle(fontWeight: FontWeight.w600),
+                style: TextStyle(
+                  fontWeight: FontWeight.w600, 
+                  color: Colors.white,
+                ),
               ),
             ),
           ),
           const SizedBox(width: 16),
           SizedBox(
             height: 40,
-            child: RaisedButton(
+            child: ElevatedButton(
               onPressed: () {},
-              color: Colors.white,
-              textColor: Colors.black,
+              style: ElevatedButton.styleFrom(
+                primary: Colors.white,
+                onPrimary: Colors.black, 
+              ),
               child: Text(
                 '  Sign up  ',
                 style: TextStyle(fontWeight: FontWeight.w800),
