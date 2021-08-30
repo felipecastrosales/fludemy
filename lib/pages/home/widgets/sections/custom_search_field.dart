@@ -9,10 +9,10 @@ class CustomSearchField extends StatelessWidget {
       decoration: InputDecoration(
         isDense: true,
         enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.grey[50]),
+          borderSide: BorderSide(color: Colors.grey[50]!),
         ),
         focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.grey[50]),
+          borderSide: BorderSide(color: Colors.grey[50]!),
         ),
         hintStyle: TextStyle(color: Colors.grey[50]),
         hintText: 'Type some search here',

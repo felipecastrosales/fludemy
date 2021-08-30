@@ -13,7 +13,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                   height: 45,
                   decoration: BoxDecoration(
                     color: Colors.grey[100],
-                    border: Border.all(color: Colors.grey[600]),
+                    border: Border.all(color: Colors.grey[600]!),
                   ),
                   child: Row(
                     children: [
@@ -37,7 +37,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
               ),
               if (constraints.maxWidth >= 320) ...[
                 const SizedBox(width: 24),
-                FlatButton(
+                TextButton(
                   onPressed: () {},
                   child: Text(
                     'Learn', 
@@ -51,7 +51,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
               ],
               if (constraints.maxWidth >= 500) ...[
                 const SizedBox(width: 8),
-                FlatButton(
+                TextButton(
                   onPressed: () {},
                   child: Text(
                     'Flutter', 

@@ -77,7 +77,7 @@ class AdvantagesSection extends StatelessWidget {
           return Container(
             padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
             decoration: BoxDecoration(
-              border: Border(bottom: BorderSide(color: Colors.grey[700])),
+              border: Border(bottom: BorderSide(color: Colors.grey[700]!)),
             ),
             child: Wrap(
               alignment: WrapAlignment.spaceEvenly,
@@ -106,7 +106,7 @@ class AdvantagesSection extends StatelessWidget {
         return Container(
           padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
           decoration: BoxDecoration(
-            border: Border(bottom: BorderSide(color: Colors.grey[700])),
+            border: Border(bottom: BorderSide(color: Colors.grey[700]!)),
           ),
           child: Wrap(
             alignment: WrapAlignment.spaceEvenly,
