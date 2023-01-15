@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:fludemy/breakpoints.dart';
+import 'package:fludemy/app/core/responsive/breakpoints.dart';
 
 class AdvantagesSection extends StatelessWidget {
   const AdvantagesSection({super.key});

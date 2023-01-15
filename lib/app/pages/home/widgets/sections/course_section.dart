@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:fludemy/breakpoints.dart';
+import 'package:fludemy/app/core/responsive/breakpoints.dart';
 
 import 'course_item.dart';
 

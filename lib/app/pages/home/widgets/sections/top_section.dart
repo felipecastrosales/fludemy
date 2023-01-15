@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:fludemy/breakpoints.dart';
-import 'package:fludemy/pages/home/widgets/sections/custom_search_field.dart';
+import 'package:fludemy/app/core/responsive/breakpoints.dart';
+import 'package:fludemy/app/pages/home/widgets/sections/custom_search_field.dart';
 
 class TopSection extends StatelessWidget {
   const TopSection({super.key});

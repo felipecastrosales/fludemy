@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:fludemy/breakpoints.dart';
+import 'package:fludemy/app/core/responsive/breakpoints.dart';
 
 import 'widgets/appbar/mobile_app_bar.dart';
 import 'widgets/appbar/web_app_bar.dart';
