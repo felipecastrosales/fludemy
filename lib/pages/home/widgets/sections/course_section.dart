@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../breakpoints.dart';
+import 'package:fludemy/breakpoints.dart';
+
 import 'course_item.dart';
 
 class CourseSection extends StatelessWidget {
@@ -18,7 +19,8 @@ class CourseSection extends StatelessWidget {
           ),
           padding: EdgeInsets.symmetric(
             vertical: 16,
-            horizontal: constraints.maxWidth >= tabletBreakpoint ? 0 : 16,
+            horizontal:
+                constraints.maxWidth >= Breakpoints.tabletBreakpoint ? 0 : 16,
           ),
           physics: const NeverScrollableScrollPhysics(),
           itemCount: 20,

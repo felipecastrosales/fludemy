@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../breakpoints.dart';
+import 'package:fludemy/breakpoints.dart';
 
 class AdvantagesSection extends StatelessWidget {
   const AdvantagesSection({super.key});
@@ -80,7 +80,7 @@ class AdvantagesSection extends StatelessWidget {
     }
 
     return LayoutBuilder(builder: (_, constraints) {
-      if (constraints.maxWidth >= mobileBreakpoint) {
+      if (constraints.maxWidth >= Breakpoints.mobileBreakpoint) {
         return Container(
           padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
           decoration: BoxDecoration(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../breakpoints.dart';
-import 'custom_search_field.dart';
+import 'package:fludemy/breakpoints.dart';
+import 'package:fludemy/pages/home/widgets/sections/custom_search_field.dart';
 
 class TopSection extends StatelessWidget {
   const TopSection({super.key});
@@ -11,7 +11,7 @@ class TopSection extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         final maxWidth = constraints.maxWidth;
-        if (maxWidth >= tabletBreakpoint) {
+        if (maxWidth >= Breakpoints.tabletBreakpoint) {
           return AspectRatio(
             aspectRatio: 7 / 2,
             child: Stack(
@@ -63,7 +63,7 @@ class TopSection extends StatelessWidget {
             ),
           );
         }
-        if (maxWidth >= mobileBreakpoint) {
+        if (maxWidth >= Breakpoints.mobileBreakpoint) {
           return SizedBox(
             height: 300,
             child: Stack(
