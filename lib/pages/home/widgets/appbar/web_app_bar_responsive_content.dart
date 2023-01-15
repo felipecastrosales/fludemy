@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class WebAppBarResponsiveContent extends StatelessWidget {
+  const WebAppBarResponsiveContent({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -13,16 +15,21 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                   height: 45,
                   decoration: BoxDecoration(
                     color: Colors.grey[100],
-                    border: Border.all(color: Colors.grey[600]!),
+                    border: Border.all(
+                      color: Colors.grey[600]!,
+                    ),
                   ),
                   child: Row(
                     children: [
                       const SizedBox(width: 8),
                       IconButton(
-                        icon: Icon(Icons.search, color: Colors.grey[700]),
-                        onPressed: () {}
+                        icon: Icon(
+                          Icons.search,
+                          color: Colors.grey[700],
+                        ),
+                        onPressed: () {},
                       ),
-                      Expanded(
+                      const Expanded(
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
@@ -40,7 +47,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 TextButton(
                   onPressed: () {},
                   child: Text(
-                    'Learn', 
+                    'Learn',
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                       color: Colors.grey[100],
@@ -54,7 +61,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 TextButton(
                   onPressed: () {},
                   child: Text(
-                    'Flutter', 
+                    'Flutter',
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                       color: Colors.grey[100],

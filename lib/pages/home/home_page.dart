@@ -8,27 +8,32 @@ import 'widgets/sections/course_section.dart';
 import 'widgets/sections/top_section.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
         return Scaffold(
-          appBar: constraints.maxWidth < mobileBreakpoint 
-            ? PreferredSize(
-                child: MobileAppBar(),
-                preferredSize: Size(double.infinity, 56))
-            : PreferredSize(
-                child: WebAppBar(),
-                preferredSize: Size(double.infinity, 80)),
-          drawer: constraints.maxWidth < mobileBreakpoint ? Drawer() : null,
+          appBar: constraints.maxWidth < mobileBreakpoint
+              ? const PreferredSize(
+                  preferredSize: Size(double.infinity, 56),
+                  child: MobileAppBar(),
+                )
+              : const PreferredSize(
+                  preferredSize: Size(double.infinity, 80),
+                  child: WebAppBar(),
+                ),
+          drawer:
+              constraints.maxWidth < mobileBreakpoint ? const Drawer() : null,
           body: Align(
             alignment: Alignment.topCenter,
             child: ConstrainedBox(
-              constraints: BoxConstraints(
+              constraints: const BoxConstraints(
                 maxWidth: 1200,
               ),
               child: ListView(
-                children: [
+                children: const [
                   TopSection(),
                   AdvantagesSection(),
                   CourseSection(),

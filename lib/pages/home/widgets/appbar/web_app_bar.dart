@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'web_app_bar_responsive_content.dart';
 
 class WebAppBar extends StatelessWidget {
+  const WebAppBar({super.key});
+
   @override
   Widget build(BuildContext context) {
     return AppBar(
@@ -10,16 +12,20 @@ class WebAppBar extends StatelessWidget {
       toolbarHeight: 80,
       title: Row(
         children: [
-          Image.asset('assets/fu.png', height: 40, width: 40),
-          Text(
+          Image.asset(
+            'assets/fu.png',
+            height: 40,
+            width: 40,
+          ),
+          const Text(
             'FLUdemy',
-            style: TextStyle(fontWeight: FontWeight.w800), 
+            style: TextStyle(fontWeight: FontWeight.w800),
           ),
           const SizedBox(width: 24),
-          WebAppBarResponsiveContent(),
+          const WebAppBarResponsiveContent(),
           const SizedBox(width: 24),
           IconButton(
-            icon: Icon(Icons.shopping_cart_rounded), 
+            icon: const Icon(Icons.shopping_cart_rounded),
             onPressed: () {},
           ),
           const SizedBox(width: 16),
@@ -30,14 +36,17 @@ class WebAppBar extends StatelessWidget {
               style: ButtonStyle(
                 side: MaterialStateProperty.resolveWith<BorderSide>(
                   (states) {
-                    return BorderSide(color: Colors.white, width: 1.5);
+                    return const BorderSide(
+                      color: Colors.white,
+                      width: 1.5,
+                    );
                   },
                 ),
               ),
-              child: Text(
+              child: const Text(
                 '  Log in  ',
                 style: TextStyle(
-                  fontWeight: FontWeight.w600, 
+                  fontWeight: FontWeight.w600,
                   color: Colors.white,
                 ),
               ),
@@ -49,10 +58,10 @@ class WebAppBar extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
-                primary: Colors.white,
-                onPrimary: Colors.black, 
+                foregroundColor: Colors.black,
+                backgroundColor: Colors.white,
               ),
-              child: Text(
+              child: const Text(
                 '  Sign up  ',
                 style: TextStyle(fontWeight: FontWeight.w800),
               ),
