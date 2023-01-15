@@ -1,3 +1,4 @@
+import 'package:fludemy/app/core/values/app_texts.dart';
 import 'package:flutter/material.dart';
 
 import 'package:fludemy/app/core/theme/tokens/app_colors.dart';
@@ -21,8 +22,7 @@ class CustomSearchField extends StatelessWidget {
           borderSide: BorderSide(color: AppColors.lotion),
         ),
         hintStyle: const TextStyle(color: AppColors.lotion),
-        // TODO:
-        hintText: 'Type some search here',
+        hintText: AppTexts.typeSomeSearchHere,
         suffixIcon: IconButton(
           icon: const Icon(Icons.search),
           color: AppColors.lotion,

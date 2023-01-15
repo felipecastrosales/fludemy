@@ -15,4 +15,5 @@ class AppTexts {
       'Let\'s learn Flutter with these courses';
   static const theFlutterIsAmazing = 'The Flutter is amazing! '
       'Create amazing things with the Flutter Framework.';
+  static const typeSomeSearchHere = 'Type some search here';
 }
