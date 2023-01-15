@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'package:auto_size_text/auto_size_text.dart';
 
+import 'package:fludemy/app/core/values/app_assets.dart';
+import 'package:fludemy/app/core/values/app_texts.dart';
+
 class CourseItem extends StatelessWidget {
   const CourseItem({super.key});
 
@@ -11,19 +14,18 @@ class CourseItem extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Image.asset(
-          'assets/course.jpg',
+          AppAssets.course,
           fit: BoxFit.fitWidth,
         ),
         const SizedBox(height: 4),
         Flexible(
           child: LayoutBuilder(builder: (_, constraints) {
             return AutoSizeText(
-              'Responsiveness in the Flutter | '
-              'Mobile, Tablet, Web and Desktop',
+              AppTexts.responsivenessInTheFlutterPlatforms,
               maxLines: 3,
               presetFontSizes: const [16, 14, 12],
               overflowReplacement: Text(
-                'Responsiveness',
+                AppTexts.responsiveness,
                 style: TextStyle(
                   fontWeight: FontWeight.w800,
                   color: Colors.grey[100],
@@ -40,7 +42,7 @@ class CourseItem extends StatelessWidget {
           }),
         ),
         Text(
-          'Daniel Ciolfi and Felipe Sales',
+          AppTexts.danielCiolfiAndFelipeSales,
           style: TextStyle(
             fontWeight: FontWeight.w700,
             fontSize: 12,
@@ -48,7 +50,7 @@ class CourseItem extends StatelessWidget {
           ),
         ),
         Text(
-          'R\$22,90',
+          AppTexts.price22dot90,
           style: TextStyle(
             fontWeight: FontWeight.w800,
             fontSize: 12,

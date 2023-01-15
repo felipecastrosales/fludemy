@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:fludemy/app/core/values/app_texts.dart';
+
 class WebAppBarResponsiveContent extends StatelessWidget {
   const WebAppBarResponsiveContent({super.key});
 
@@ -47,7 +49,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 TextButton(
                   onPressed: () {},
                   child: Text(
-                    'Learn',
+                    AppTexts.learn,
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                       color: Colors.grey[100],
@@ -61,7 +63,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 TextButton(
                   onPressed: () {},
                   child: Text(
-                    'Flutter',
+                    AppTexts.flutter,
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                       color: Colors.grey[100],

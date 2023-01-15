@@ -1,3 +1,5 @@
+import 'package:fludemy/app/core/values/app_assets.dart';
+import 'package:fludemy/app/core/values/app_texts.dart';
 import 'package:flutter/material.dart';
 
 import 'web_app_bar_responsive_content.dart';
@@ -13,12 +15,12 @@ class WebAppBar extends StatelessWidget {
       title: Row(
         children: [
           Image.asset(
-            'assets/fu.png',
+            AppAssets.logo,
             height: 40,
             width: 40,
           ),
           const Text(
-            'FLUdemy',
+            AppTexts.fludemy,
             style: TextStyle(fontWeight: FontWeight.w800),
           ),
           const SizedBox(width: 24),
@@ -44,7 +46,7 @@ class WebAppBar extends StatelessWidget {
                 ),
               ),
               child: const Text(
-                '  Log in  ',
+                AppTexts.loginSpaced,
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                   color: Colors.white,
@@ -62,7 +64,7 @@ class WebAppBar extends StatelessWidget {
                 backgroundColor: Colors.white,
               ),
               child: const Text(
-                '  Sign up  ',
+                AppTexts.signUpSpaced,
                 style: TextStyle(fontWeight: FontWeight.w800),
               ),
             ),

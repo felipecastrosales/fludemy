@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:fludemy/app/core/responsive/breakpoints.dart';
+import 'package:fludemy/app/core/values/app_assets.dart';
+import 'package:fludemy/app/core/values/app_texts.dart';
 import 'package:fludemy/app/pages/home/widgets/sections/custom_search_field.dart';
 
 class TopSection extends StatelessWidget {
@@ -32,7 +34,7 @@ class TopSection extends StatelessWidget {
                       child: Column(
                         children: [
                           Text(
-                            'Let\'s learn Flutter with these courses',
+                            AppTexts.letsLearnFlutterWithTheseCourses,
                             style: TextStyle(
                               fontWeight: FontWeight.w800,
                               fontSize: 32,
@@ -43,8 +45,7 @@ class TopSection extends StatelessWidget {
                           ),
                           const SizedBox(height: 16),
                           Text(
-                            'The Flutter is amazing! '
-                            'Create amazing things with the Flutter Framework.',
+                            AppTexts.theFlutterIsAmazing,
                             style: TextStyle(
                               fontWeight: FontWeight.w800,
                               fontSize: 16,
@@ -85,7 +86,7 @@ class TopSection extends StatelessWidget {
                       child: Column(
                         children: [
                           Text(
-                            'Let\'s learn Flutter with these courses',
+                            AppTexts.letsLearnFlutterWithTheseCourses,
                             style: TextStyle(
                               fontWeight: FontWeight.w800,
                               fontSize: 28,
@@ -95,8 +96,7 @@ class TopSection extends StatelessWidget {
                           ),
                           const SizedBox(height: 12),
                           Text(
-                            'The Flutter is amazing! '
-                            'Create amazing things with the Flutter Framework.',
+                            AppTexts.theFlutterIsAmazing,
                             style: TextStyle(
                               fontWeight: FontWeight.w700,
                               fontSize: 16,
@@ -125,7 +125,7 @@ class TopSection extends StatelessWidget {
               child: Column(
                 children: [
                   Text(
-                    'Let\'s learn Flutter with these courses',
+                    AppTexts.letsLearnFlutterWithTheseCourses,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontWeight: FontWeight.w800,
@@ -136,8 +136,7 @@ class TopSection extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'The Flutter is amazing! '
-                    'Create amazing things with the Flutter Framework.',
+                    AppTexts.theFlutterIsAmazing,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontWeight: FontWeight.w700,
@@ -166,7 +165,7 @@ class TopSectionImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset(
-      'assets/app.jpg',
+      AppAssets.app,
       fit: BoxFit.cover,
     );
   }

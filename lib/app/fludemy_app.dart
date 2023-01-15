@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:device_preview/device_preview.dart';
 
+import 'package:fludemy/app/core/values/app_texts.dart';
+
 import 'pages/home/home_page.dart';
 
 class FludemyApp extends StatelessWidget {
@@ -10,7 +12,7 @@ class FludemyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'FLUdemy | Courses',
+      title: AppTexts.app,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,

@@ -1,3 +1,4 @@
+import 'package:fludemy/app/core/values/app_assets.dart';
 import 'package:flutter/material.dart';
 
 class MobileAppBar extends StatelessWidget {
@@ -7,7 +8,7 @@ class MobileAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       title: Image.asset(
-        'assets/fu.png',
+        AppAssets.logo,
         height: 50,
         width: 50,
       ),
