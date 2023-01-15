@@ -4,6 +4,8 @@ import '../../../../breakpoints.dart';
 import 'custom_search_field.dart';
 
 class TopSection extends StatelessWidget {
+  const TopSection({super.key});
+
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
@@ -14,7 +16,7 @@ class TopSection extends StatelessWidget {
             aspectRatio: 7 / 2,
             child: Stack(
               children: [
-                AspectRatio(
+                const AspectRatio(
                   aspectRatio: 7 / 2,
                   child: TopSectionImage(),
                 ),
@@ -25,7 +27,7 @@ class TopSection extends StatelessWidget {
                     color: Colors.black87,
                     elevation: 16,
                     child: Container(
-                      padding: EdgeInsets.all(24),
+                      padding: const EdgeInsets.all(24),
                       width: 450,
                       child: Column(
                         children: [
@@ -36,7 +38,7 @@ class TopSection extends StatelessWidget {
                               fontSize: 32,
                               color: Colors.grey[50],
                               letterSpacing: 1.25,
-                              height: 0.85
+                              height: 0.85,
                             ),
                           ),
                           const SizedBox(height: 16),
@@ -51,7 +53,7 @@ class TopSection extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(height: 16),
-                          CustomSearchField(),
+                          const CustomSearchField(),
                         ],
                       ),
                     ),
@@ -66,7 +68,7 @@ class TopSection extends StatelessWidget {
             height: 300,
             child: Stack(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 300,
                   width: double.infinity,
                   child: TopSectionImage(),
@@ -78,7 +80,7 @@ class TopSection extends StatelessWidget {
                     color: Colors.black87,
                     elevation: 16,
                     child: Container(
-                      padding: EdgeInsets.all(20),
+                      padding: const EdgeInsets.all(20),
                       width: 360,
                       child: Column(
                         children: [
@@ -102,7 +104,7 @@ class TopSection extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(height: 16),
-                          CustomSearchField(),
+                          const CustomSearchField(),
                         ],
                       ),
                     ),
@@ -114,9 +116,9 @@ class TopSection extends StatelessWidget {
         }
         return Column(
           children: [
-            AspectRatio(
+            const AspectRatio(
               aspectRatio: 10 / 3,
-              child: TopSectionImage()
+              child: TopSectionImage(),
             ),
             Padding(
               padding: const EdgeInsets.all(16),
@@ -147,8 +149,8 @@ class TopSection extends StatelessWidget {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: CustomSearchField(),
             ),
           ],
@@ -159,6 +161,8 @@ class TopSection extends StatelessWidget {
 }
 
 class TopSectionImage extends StatelessWidget {
+  const TopSectionImage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Image.asset(

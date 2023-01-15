@@ -5,10 +5,16 @@ import 'package:device_preview/device_preview.dart';
 import 'pages/home/home_page.dart';
 
 void main() {
-  runApp(DevicePreview(builder: (_) => MyApp()));
+  runApp(
+    DevicePreview(
+      builder: (_) => const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,7 +26,7 @@ class MyApp extends StatelessWidget {
       ),
       builder: DevicePreview.appBuilder,
       locale: DevicePreview.locale(context),
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }

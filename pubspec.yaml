@@ -1,21 +1,22 @@
-name: FLUDdemy
+name: fludemy
 description: FLUdemy.
 publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: '>=2.18.5 <3.0.0'
 
 dependencies:
-  auto_size_text: ^3.0.0-nullsafety.0
-  cupertino_icons: ^1.0.3
-  device_preview: ^0.7.4
+  auto_size_text: ^3.0.0
+  cupertino_icons: ^1.0.5
+  device_preview: ^1.1.0
   effective_dart: ^1.3.2
   flutter:
     sdk: flutter
-  flutter_svg: ^0.22.0
+  flutter_svg: ^1.1.6
 
 dev_dependencies:
+  flutter_lints: ^2.0.1
   flutter_test:
     sdk: flutter
   integration_test:
@@ -24,6 +25,4 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/app.jpg
-    - assets/course.jpg
-    - assets/fu.png
+    - assets/
