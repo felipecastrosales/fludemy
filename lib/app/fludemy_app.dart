@@ -1,11 +1,10 @@
-import 'package:fludemy/app/core/theme/app_themes.dart';
 import 'package:flutter/material.dart';
 
 import 'package:device_preview/device_preview.dart';
 
+import 'package:fludemy/app/core/theme/app_themes.dart';
 import 'package:fludemy/app/core/values/app_texts.dart';
-
-import 'pages/home/home_page.dart';
+import 'package:fludemy/app/pages/home/home_page.dart';
 
 class FludemyApp extends StatelessWidget {
   const FludemyApp({super.key});

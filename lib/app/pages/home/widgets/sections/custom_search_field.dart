@@ -1,7 +1,7 @@
-import 'package:fludemy/app/core/values/app_texts.dart';
 import 'package:flutter/material.dart';
 
 import 'package:fludemy/app/core/theme/tokens/app_colors.dart';
+import 'package:fludemy/app/core/values/app_texts.dart';
 
 class CustomSearchField extends StatelessWidget {
   const CustomSearchField({super.key});
