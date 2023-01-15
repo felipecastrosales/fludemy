@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 
 import 'package:fludemy/app/core/responsive/breakpoints.dart';
 import 'package:fludemy/app/core/theme/tokens/app_colors.dart';
+import 'package:fludemy/app/core/values/app_texts.dart';
 
 class AdvantagesSection extends StatelessWidget {
   const AdvantagesSection({super.key});
 
   @override
   Widget build(BuildContext context) {
+    // TODO: Refactor this code - in widget
     Widget buildHorizontalAdvantage(
       IconData iconData,
       String title,
@@ -50,6 +52,7 @@ class AdvantagesSection extends StatelessWidget {
       );
     }
 
+    // TODO: Refactor this code - in widget
     Widget buildVerticalAdvantage(
       IconData iconData,
       String title,
@@ -104,18 +107,18 @@ class AdvantagesSection extends StatelessWidget {
             children: [
               buildHorizontalAdvantage(
                 Icons.connect_without_contact,
-                '+100.000 developers',
-                'Awesome!',
+                AppTexts.moreThan100kDevelopers,
+                AppTexts.awesomeExclamation,
               ),
               buildHorizontalAdvantage(
                 Icons.card_membership,
-                'Certificate of Complete',
-                'Sensational!',
+                AppTexts.certificateOfComplete,
+                AppTexts.sensationalExclamation,
               ),
               buildHorizontalAdvantage(
                 Icons.verified,
-                'Full Access',
-                'Anywhere!',
+                AppTexts.sensationalExclamation,
+                AppTexts.anywhereExclamation,
               ),
             ],
           ),
@@ -135,18 +138,18 @@ class AdvantagesSection extends StatelessWidget {
           children: [
             buildVerticalAdvantage(
               Icons.connect_without_contact,
-              '+100.000 developers',
-              'Awesome!',
+              AppTexts.moreThan100kDevelopers,
+              AppTexts.awesomeExclamation,
             ),
             buildVerticalAdvantage(
               Icons.card_membership,
-              'Certificate of Complete',
-              'Sensational!',
+              AppTexts.certificateOfComplete,
+              AppTexts.sensationalExclamation,
             ),
             buildVerticalAdvantage(
               Icons.verified,
-              'Full Access',
-              'Anywhere!',
+              AppTexts.sensationalExclamation,
+              AppTexts.anywhereExclamation,
             ),
           ],
         ),

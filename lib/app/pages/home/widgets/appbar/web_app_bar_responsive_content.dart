@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:fludemy/app/core/responsive/breakpoints.dart';
 import 'package:fludemy/app/core/theme/tokens/app_colors.dart';
 import 'package:fludemy/app/core/values/app_texts.dart';
 
@@ -36,7 +37,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: ' Search for anything... ',
+                            hintText: AppTexts.searchForAnythingSpaced,
                             isCollapsed: true,
                           ),
                         ),
@@ -45,7 +46,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                   ),
                 ),
               ),
-              if (constraints.maxWidth >= 320) ...[
+              if (constraints.maxWidth >= Breakpoints.showOnlyLearn) ...[
                 const SizedBox(width: 24),
                 TextButton(
                   onPressed: () {},
@@ -59,7 +60,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                   ),
                 ),
               ],
-              if (constraints.maxWidth >= 500) ...[
+              if (constraints.maxWidth >= Breakpoints.showFlutterButton) ...[
                 const SizedBox(width: 8),
                 TextButton(
                   onPressed: () {},

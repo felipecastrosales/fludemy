@@ -20,7 +20,7 @@ class CourseSection extends StatelessWidget {
           padding: EdgeInsets.symmetric(
             vertical: 16,
             horizontal:
-                constraints.maxWidth >= Breakpoints.tabletBreakpoint ? 0 : 16,
+                constraints.maxWidth >= Breakpoints.tabletMedium ? 0 : 16,
           ),
           physics: const NeverScrollableScrollPhysics(),
           itemCount: 20,
