@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:fludemy/app/core/theme/tokens/app_colors.dart';
 import 'package:fludemy/app/core/values/app_texts.dart';
 
 class WebAppBarResponsiveContent extends StatelessWidget {
@@ -16,18 +17,18 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 child: Container(
                   height: 45,
                   decoration: BoxDecoration(
-                    color: Colors.grey[100],
+                    color: AppColors.cultured,
                     border: Border.all(
-                      color: Colors.grey[600]!,
+                      color: AppColors.sonicSilver,
                     ),
                   ),
                   child: Row(
                     children: [
                       const SizedBox(width: 8),
                       IconButton(
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.search,
-                          color: Colors.grey[700],
+                          color: AppColors.graniteGray,
                         ),
                         onPressed: () {},
                       ),
@@ -48,11 +49,11 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 const SizedBox(width: 24),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     AppTexts.learn,
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
-                      color: Colors.grey[100],
+                      color: AppColors.cultured,
                       letterSpacing: 1.1,
                     ),
                   ),
@@ -62,11 +63,11 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 const SizedBox(width: 8),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     AppTexts.flutter,
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
-                      color: Colors.grey[100],
+                      color: AppColors.cultured,
                       letterSpacing: 1.1,
                     ),
                   ),

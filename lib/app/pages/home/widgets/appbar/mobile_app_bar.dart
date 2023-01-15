@@ -1,5 +1,7 @@
-import 'package:fludemy/app/core/values/app_assets.dart';
 import 'package:flutter/material.dart';
+
+import 'package:fludemy/app/core/theme/tokens/app_colors.dart';
+import 'package:fludemy/app/core/values/app_assets.dart';
 
 class MobileAppBar extends StatelessWidget {
   const MobileAppBar({super.key});
@@ -13,7 +15,7 @@ class MobileAppBar extends StatelessWidget {
         width: 50,
       ),
       centerTitle: true,
-      backgroundColor: Colors.black,
+      backgroundColor: AppColors.black87,
       actions: [
         IconButton(
           icon: const Icon(Icons.search),

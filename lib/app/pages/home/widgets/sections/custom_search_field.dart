@@ -1,26 +1,31 @@
 import 'package:flutter/material.dart';
 
+import 'package:fludemy/app/core/theme/tokens/app_colors.dart';
+
 class CustomSearchField extends StatelessWidget {
   const CustomSearchField({super.key});
 
   @override
   Widget build(BuildContext context) {
     return TextField(
-      cursorColor: Colors.blue,
-      style: TextStyle(color: Colors.grey[50]),
+      cursorColor: AppColors.blue,
+      style: const TextStyle(color: AppColors.lotion),
       decoration: InputDecoration(
         isDense: true,
-        enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.grey[50]!),
+        enabledBorder: const OutlineInputBorder(
+          borderSide: BorderSide(
+            color: AppColors.lotion,
+          ),
         ),
-        focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.grey[50]!),
+        focusedBorder: const OutlineInputBorder(
+          borderSide: BorderSide(color: AppColors.lotion),
         ),
-        hintStyle: TextStyle(color: Colors.grey[50]),
+        hintStyle: const TextStyle(color: AppColors.lotion),
+        // TODO:
         hintText: 'Type some search here',
         suffixIcon: IconButton(
           icon: const Icon(Icons.search),
-          color: Colors.grey[50],
+          color: AppColors.lotion,
           onPressed: () {},
         ),
       ),

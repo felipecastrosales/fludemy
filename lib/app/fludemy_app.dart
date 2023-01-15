@@ -1,3 +1,4 @@
+import 'package:fludemy/app/core/theme/app_themes.dart';
 import 'package:flutter/material.dart';
 
 import 'package:device_preview/device_preview.dart';
@@ -14,10 +15,7 @@ class FludemyApp extends StatelessWidget {
     return MaterialApp(
       title: AppTexts.app,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: const Color(0XFF0A0A0A),
-      ),
+      theme: AppThemes.primary,
       builder: DevicePreview.appBuilder,
       locale: DevicePreview.locale(context),
       home: const HomePage(),

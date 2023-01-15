@@ -1,6 +1,8 @@
+import 'package:flutter/material.dart';
+
+import 'package:fludemy/app/core/theme/tokens/app_colors.dart';
 import 'package:fludemy/app/core/values/app_assets.dart';
 import 'package:fludemy/app/core/values/app_texts.dart';
-import 'package:flutter/material.dart';
 
 import 'web_app_bar_responsive_content.dart';
 
@@ -10,7 +12,7 @@ class WebAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.black,
+      backgroundColor: AppColors.black87,
       toolbarHeight: 80,
       title: Row(
         children: [
@@ -39,7 +41,7 @@ class WebAppBar extends StatelessWidget {
                 side: MaterialStateProperty.resolveWith<BorderSide>(
                   (states) {
                     return const BorderSide(
-                      color: Colors.white,
+                      color: AppColors.white,
                       width: 1.5,
                     );
                   },
@@ -49,7 +51,7 @@ class WebAppBar extends StatelessWidget {
                 AppTexts.loginSpaced,
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
-                  color: Colors.white,
+                  color: AppColors.white,
                 ),
               ),
             ),
@@ -60,8 +62,8 @@ class WebAppBar extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
-                foregroundColor: Colors.black,
-                backgroundColor: Colors.white,
+                foregroundColor: AppColors.black87,
+                backgroundColor: AppColors.white,
               ),
               child: const Text(
                 AppTexts.signUpSpaced,
