@@ -4,7 +4,7 @@ import 'package:fludemy/app/core/responsive/breakpoints.dart';
 
 import 'widgets/appbar/mobile_app_bar.dart';
 import 'widgets/appbar/web_app_bar.dart';
-import 'widgets/sections/advantages_section.dart';
+import 'widgets/sections/advantages_section/advantages_section.dart';
 import 'widgets/sections/course_section.dart';
 import 'widgets/sections/top_section.dart';
 

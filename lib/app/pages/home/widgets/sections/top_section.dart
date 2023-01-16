@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'package:fludemy/app/core/responsive/breakpoints.dart';
 import 'package:fludemy/app/core/theme/tokens/app_colors.dart';
-import 'package:fludemy/app/core/values/app_assets.dart';
 import 'package:fludemy/app/core/values/app_texts.dart';
 import 'package:fludemy/app/pages/home/widgets/sections/custom_search_field.dart';
+import 'package:fludemy/app/pages/home/widgets/sections/top_section_image.dart';
 
 class TopSection extends StatelessWidget {
   const TopSection({super.key});
@@ -156,18 +156,6 @@ class TopSection extends StatelessWidget {
           ],
         );
       },
-    );
-  }
-}
-
-class TopSectionImage extends StatelessWidget {
-  const TopSectionImage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Image.asset(
-      AppAssets.app,
-      fit: BoxFit.cover,
     );
   }
 }
