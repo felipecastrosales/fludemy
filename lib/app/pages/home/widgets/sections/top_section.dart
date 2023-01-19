@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../../../../breakpoints.dart';
-import 'custom_search_field.dart';
+import 'package:fludemy/app/core/responsive/breakpoints.dart';
+import 'package:fludemy/app/core/theme/tokens/app_colors.dart';
+import 'package:fludemy/app/core/values/app_texts.dart';
+import 'package:fludemy/app/pages/home/widgets/sections/custom_search_field.dart';
+import 'package:fludemy/app/pages/home/widgets/sections/top_section_image.dart';
 
 class TopSection extends StatelessWidget {
   const TopSection({super.key});
@@ -11,7 +14,7 @@ class TopSection extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         final maxWidth = constraints.maxWidth;
-        if (maxWidth >= tabletBreakpoint) {
+        if (maxWidth >= Breakpoints.tabletMedium) {
           return AspectRatio(
             aspectRatio: 7 / 2,
             child: Stack(
@@ -24,36 +27,35 @@ class TopSection extends StatelessWidget {
                   top: 56,
                   left: 50,
                   child: Card(
-                    color: Colors.black87,
+                    color: AppColors.black87,
                     elevation: 16,
                     child: Container(
                       padding: const EdgeInsets.all(24),
                       width: 450,
                       child: Column(
-                        children: [
+                        children: const [
                           Text(
-                            'Let\'s learn Flutter with these courses',
+                            AppTexts.letsLearnFlutterWithTheseCourses,
                             style: TextStyle(
                               fontWeight: FontWeight.w800,
                               fontSize: 32,
-                              color: Colors.grey[50],
+                              color: AppColors.lotion,
                               letterSpacing: 1.25,
                               height: 0.85,
                             ),
                           ),
-                          const SizedBox(height: 16),
+                          SizedBox(height: 16),
                           Text(
-                            'The Flutter is amazing! '
-                            'Create amazing things with the Flutter Framework.',
+                            AppTexts.theFlutterIsAmazing,
                             style: TextStyle(
                               fontWeight: FontWeight.w800,
                               fontSize: 16,
-                              color: Colors.grey[100],
+                              color: AppColors.cultured,
                               letterSpacing: 1.1,
                             ),
                           ),
-                          const SizedBox(height: 16),
-                          const CustomSearchField(),
+                          SizedBox(height: 16),
+                          CustomSearchField(),
                         ],
                       ),
                     ),
@@ -63,7 +65,7 @@ class TopSection extends StatelessWidget {
             ),
           );
         }
-        if (maxWidth >= mobileBreakpoint) {
+        if (maxWidth >= Breakpoints.mobileBreakpoint) {
           return SizedBox(
             height: 300,
             child: Stack(
@@ -77,34 +79,33 @@ class TopSection extends StatelessWidget {
                   top: 32,
                   left: 32,
                   child: Card(
-                    color: Colors.black87,
+                    color: AppColors.black87,
                     elevation: 16,
                     child: Container(
                       padding: const EdgeInsets.all(20),
                       width: 360,
                       child: Column(
-                        children: [
+                        children: const [
                           Text(
-                            'Let\'s learn Flutter with these courses',
+                            AppTexts.letsLearnFlutterWithTheseCourses,
                             style: TextStyle(
                               fontWeight: FontWeight.w800,
                               fontSize: 28,
-                              color: Colors.grey[50],
+                              color: AppColors.lotion,
                               letterSpacing: 1.2,
                             ),
                           ),
-                          const SizedBox(height: 12),
+                          SizedBox(height: 12),
                           Text(
-                            'The Flutter is amazing! '
-                            'Create amazing things with the Flutter Framework.',
+                            AppTexts.theFlutterIsAmazing,
                             style: TextStyle(
                               fontWeight: FontWeight.w700,
                               fontSize: 16,
-                              color: Colors.grey[100],
+                              color: AppColors.cultured,
                             ),
                           ),
-                          const SizedBox(height: 16),
-                          const CustomSearchField(),
+                          SizedBox(height: 16),
+                          CustomSearchField(),
                         ],
                       ),
                     ),
@@ -123,26 +124,25 @@ class TopSection extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(16),
               child: Column(
-                children: [
+                children: const [
                   Text(
-                    'Let\'s learn Flutter with these courses',
+                    AppTexts.letsLearnFlutterWithTheseCourses,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontWeight: FontWeight.w800,
                       fontSize: 28,
-                      color: Colors.grey[50],
+                      color: AppColors.lotion,
                       letterSpacing: 1.2,
                     ),
                   ),
-                  const SizedBox(height: 8),
+                  SizedBox(height: 8),
                   Text(
-                    'The Flutter is amazing! '
-                    'Create amazing things with the Flutter Framework.',
+                    AppTexts.theFlutterIsAmazing,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontWeight: FontWeight.w700,
                       fontSize: 16,
-                      color: Colors.grey[100],
+                      color: AppColors.cultured,
                       letterSpacing: 1.1,
                     ),
                   ),
@@ -156,18 +156,6 @@ class TopSection extends StatelessWidget {
           ],
         );
       },
-    );
-  }
-}
-
-class TopSectionImage extends StatelessWidget {
-  const TopSectionImage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Image.asset(
-      'assets/app.jpg',
-      fit: BoxFit.cover,
     );
   }
 }

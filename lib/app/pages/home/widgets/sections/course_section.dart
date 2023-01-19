@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../breakpoints.dart';
+import 'package:fludemy/app/core/responsive/breakpoints.dart';
+
 import 'course_item.dart';
 
 class CourseSection extends StatelessWidget {
@@ -9,7 +10,8 @@ class CourseSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
-      builder: (_, constraints) {
+      builder: (context, constraints) {
+        final maxWidth = constraints.maxWidth;
         return GridView.builder(
           gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 300,
@@ -18,7 +20,7 @@ class CourseSection extends StatelessWidget {
           ),
           padding: EdgeInsets.symmetric(
             vertical: 16,
-            horizontal: constraints.maxWidth >= tabletBreakpoint ? 0 : 16,
+            horizontal: maxWidth >= Breakpoints.tabletMedium ? 0 : 16,
           ),
           physics: const NeverScrollableScrollPhysics(),
           itemCount: 20,

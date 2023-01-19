@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'package:fludemy/app/core/responsive/breakpoints.dart';
+import 'package:fludemy/app/core/theme/tokens/app_colors.dart';
+import 'package:fludemy/app/core/values/app_texts.dart';
+
 class WebAppBarResponsiveContent extends StatelessWidget {
   const WebAppBarResponsiveContent({super.key});
 
@@ -14,18 +18,18 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 child: Container(
                   height: 45,
                   decoration: BoxDecoration(
-                    color: Colors.grey[100],
+                    color: AppColors.cultured,
                     border: Border.all(
-                      color: Colors.grey[600]!,
+                      color: AppColors.sonicSilver,
                     ),
                   ),
                   child: Row(
                     children: [
                       const SizedBox(width: 8),
                       IconButton(
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.search,
-                          color: Colors.grey[700],
+                          color: AppColors.graniteGray,
                         ),
                         onPressed: () {},
                       ),
@@ -33,7 +37,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: ' Search for anything... ',
+                            hintText: AppTexts.searchForAnythingSpaced,
                             isCollapsed: true,
                           ),
                         ),
@@ -42,29 +46,29 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                   ),
                 ),
               ),
-              if (constraints.maxWidth >= 320) ...[
+              if (constraints.maxWidth >= Breakpoints.showOnlyLearn) ...[
                 const SizedBox(width: 24),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
-                    'Learn',
+                  child: const Text(
+                    AppTexts.learn,
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
-                      color: Colors.grey[100],
+                      color: AppColors.cultured,
                       letterSpacing: 1.1,
                     ),
                   ),
                 ),
               ],
-              if (constraints.maxWidth >= 500) ...[
+              if (constraints.maxWidth >= Breakpoints.showFlutterButton) ...[
                 const SizedBox(width: 8),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
-                    'Flutter',
+                  child: const Text(
+                    AppTexts.flutter,
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
-                      color: Colors.grey[100],
+                      color: AppColors.cultured,
                       letterSpacing: 1.1,
                     ),
                   ),
