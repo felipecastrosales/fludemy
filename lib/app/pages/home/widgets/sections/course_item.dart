@@ -20,27 +20,29 @@ class CourseItem extends StatelessWidget {
         ),
         const SizedBox(height: 4),
         Flexible(
-          child: LayoutBuilder(builder: (_, constraints) {
-            return const AutoSizeText(
-              AppTexts.responsivenessInTheFlutterPlatforms,
-              maxLines: 3,
-              presetFontSizes: [16, 14, 12],
-              overflowReplacement: Text(
-                AppTexts.responsiveness,
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              return const AutoSizeText(
+                AppTexts.responsivenessInTheFlutterPlatforms,
+                maxLines: 3,
+                presetFontSizes: [16, 14, 12],
+                overflowReplacement: Text(
+                  AppTexts.responsiveness,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w800,
+                    color: AppColors.cultured,
+                    fontSize: 16,
+                    height: 2,
+                  ),
+                ),
                 style: TextStyle(
                   fontWeight: FontWeight.w800,
-                  color: AppColors.cultured,
                   fontSize: 16,
-                  height: 2,
+                  color: AppColors.cultured,
                 ),
-              ),
-              style: TextStyle(
-                fontWeight: FontWeight.w800,
-                fontSize: 16,
-                color: AppColors.cultured,
-              ),
-            );
-          }),
+              );
+            },
+          ),
         ),
         const Text(
           AppTexts.danielCiolfiAndFelipeSales,

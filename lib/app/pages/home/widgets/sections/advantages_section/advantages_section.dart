@@ -4,97 +4,53 @@ import 'package:fludemy/app/core/responsive/breakpoints.dart';
 import 'package:fludemy/app/core/theme/tokens/app_colors.dart';
 import 'package:fludemy/app/core/values/app_texts.dart';
 
+import 'advantages_section_horizontal.dart';
+import 'advantages_section_vertical.dart';
+
 class AdvantagesSection extends StatelessWidget {
   const AdvantagesSection({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // TODO: Refactor this code - in widget
-    Widget buildHorizontalAdvantage(
-      IconData iconData,
-      String title,
-      String subtitle,
-    ) {
-      return Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(
-            iconData,
-            color: AppColors.lotion,
-            size: 50,
-          ),
-          const SizedBox(width: 8),
-          Column(
-            children: [
-              Text(
-                title,
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w800,
-                  color: AppColors.lotion,
-                  letterSpacing: 1.1,
-                ),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth >= Breakpoints.mobileBreakpoint) {
+          return Container(
+            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
+            decoration: const BoxDecoration(
+              border: Border(
+                bottom: BorderSide(color: AppColors.graniteGray),
               ),
-              Text(
-                subtitle,
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w600,
-                  color: AppColors.lotion,
-                  letterSpacing: 1.2,
+            ),
+            child: Wrap(
+              alignment: WrapAlignment.spaceEvenly,
+              runSpacing: 16,
+              spacing: 16,
+              children: const [
+                AdvantagesSectionHorizontal(
+                  iconData: Icons.connect_without_contact,
+                  title: AppTexts.moreThan100kDevelopers,
+                  subtitle: AppTexts.awesomeExclamation,
                 ),
-              ),
-            ],
-          ),
-        ],
-      );
-    }
-
-    // TODO: Refactor this code - in widget
-    Widget buildVerticalAdvantage(
-      IconData iconData,
-      String title,
-      String subtitle,
-    ) {
-      return Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(
-            iconData,
-            color: AppColors.lotion,
-            size: 50,
-          ),
-          const SizedBox(height: 8),
-          Text(
-            title,
-            textAlign: TextAlign.center,
-            style: const TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w800,
-              color: AppColors.lotion,
-              letterSpacing: 1.1,
+                AdvantagesSectionHorizontal(
+                  iconData: Icons.card_membership,
+                  title: AppTexts.certificateOfComplete,
+                  subtitle: AppTexts.sensationalExclamation,
+                ),
+                AdvantagesSectionHorizontal(
+                  iconData: Icons.verified,
+                  title: AppTexts.sensationalExclamation,
+                  subtitle: AppTexts.anywhereExclamation,
+                ),
+              ],
             ),
-          ),
-          Text(
-            subtitle,
-            textAlign: TextAlign.center,
-            style: const TextStyle(
-              fontSize: 12,
-              fontWeight: FontWeight.w600,
-              color: AppColors.lotion,
-              letterSpacing: 1.2,
-            ),
-          ),
-        ],
-      );
-    }
-
-    return LayoutBuilder(builder: (_, constraints) {
-      if (constraints.maxWidth >= Breakpoints.mobileBreakpoint) {
+          );
+        }
         return Container(
-          padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
+          padding: const EdgeInsets.symmetric(
+            vertical: 20,
+            horizontal: 16,
+          ),
           decoration: const BoxDecoration(
             border: Border(
               bottom: BorderSide(color: AppColors.graniteGray),
@@ -103,57 +59,27 @@ class AdvantagesSection extends StatelessWidget {
           child: Wrap(
             alignment: WrapAlignment.spaceEvenly,
             runSpacing: 16,
-            spacing: 16,
-            children: [
-              buildHorizontalAdvantage(
-                Icons.connect_without_contact,
-                AppTexts.moreThan100kDevelopers,
-                AppTexts.awesomeExclamation,
+            spacing: 32,
+            children: const [
+              AdvantagesSectionVertical(
+                iconData: Icons.connect_without_contact,
+                title: AppTexts.moreThan100kDevelopers,
+                subtitle: AppTexts.awesomeExclamation,
               ),
-              buildHorizontalAdvantage(
-                Icons.card_membership,
-                AppTexts.certificateOfComplete,
-                AppTexts.sensationalExclamation,
+              AdvantagesSectionVertical(
+                iconData: Icons.card_membership,
+                title: AppTexts.certificateOfComplete,
+                subtitle: AppTexts.sensationalExclamation,
               ),
-              buildHorizontalAdvantage(
-                Icons.verified,
-                AppTexts.sensationalExclamation,
-                AppTexts.anywhereExclamation,
+              AdvantagesSectionVertical(
+                iconData: Icons.verified,
+                title: AppTexts.sensationalExclamation,
+                subtitle: AppTexts.anywhereExclamation,
               ),
             ],
           ),
         );
-      }
-      return Container(
-        padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
-        decoration: const BoxDecoration(
-          border: Border(
-            bottom: BorderSide(color: AppColors.graniteGray),
-          ),
-        ),
-        child: Wrap(
-          alignment: WrapAlignment.spaceEvenly,
-          runSpacing: 16,
-          spacing: 32,
-          children: [
-            buildVerticalAdvantage(
-              Icons.connect_without_contact,
-              AppTexts.moreThan100kDevelopers,
-              AppTexts.awesomeExclamation,
-            ),
-            buildVerticalAdvantage(
-              Icons.card_membership,
-              AppTexts.certificateOfComplete,
-              AppTexts.sensationalExclamation,
-            ),
-            buildVerticalAdvantage(
-              Icons.verified,
-              AppTexts.sensationalExclamation,
-              AppTexts.anywhereExclamation,
-            ),
-          ],
-        ),
-      );
-    });
+      },
+    );
   }
 }
