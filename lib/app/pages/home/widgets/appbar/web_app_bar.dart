@@ -38,7 +38,7 @@ class WebAppBar extends StatelessWidget {
             child: OutlinedButton(
               onPressed: () {},
               style: ButtonStyle(
-                side: MaterialStateProperty.resolveWith<BorderSide>(
+                side: WidgetStateProperty.resolveWith<BorderSide>(
                   (states) {
                     return const BorderSide(
                       color: AppColors.white,

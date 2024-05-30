@@ -22,11 +22,11 @@ class AdvantagesSection extends StatelessWidget {
                 bottom: BorderSide(color: AppColors.graniteGray),
               ),
             ),
-            child: Wrap(
+            child: const Wrap(
               alignment: WrapAlignment.spaceEvenly,
               runSpacing: 16,
               spacing: 16,
-              children: const [
+              children: [
                 AdvantagesSectionHorizontal(
                   iconData: Icons.connect_without_contact,
                   title: AppTexts.moreThan100kDevelopers,
@@ -56,11 +56,11 @@ class AdvantagesSection extends StatelessWidget {
               bottom: BorderSide(color: AppColors.graniteGray),
             ),
           ),
-          child: Wrap(
+          child: const Wrap(
             alignment: WrapAlignment.spaceEvenly,
             runSpacing: 16,
             spacing: 32,
-            children: const [
+            children: [
               AdvantagesSectionVertical(
                 iconData: Icons.connect_without_contact,
                 title: AppTexts.moreThan100kDevelopers,

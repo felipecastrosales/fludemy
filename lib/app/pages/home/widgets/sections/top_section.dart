@@ -32,8 +32,8 @@ class TopSection extends StatelessWidget {
                     child: Container(
                       padding: const EdgeInsets.all(24),
                       width: 450,
-                      child: Column(
-                        children: const [
+                      child: const Column(
+                        children: [
                           Text(
                             AppTexts.letsLearnFlutterWithTheseCourses,
                             style: TextStyle(
@@ -84,8 +84,8 @@ class TopSection extends StatelessWidget {
                     child: Container(
                       padding: const EdgeInsets.all(20),
                       width: 360,
-                      child: Column(
-                        children: const [
+                      child: const Column(
+                        children: [
                           Text(
                             AppTexts.letsLearnFlutterWithTheseCourses,
                             style: TextStyle(
@@ -115,16 +115,16 @@ class TopSection extends StatelessWidget {
             ),
           );
         }
-        return Column(
+        return const Column(
           children: [
-            const AspectRatio(
+            AspectRatio(
               aspectRatio: 10 / 3,
               child: TopSectionImage(),
             ),
             Padding(
-              padding: const EdgeInsets.all(16),
+              padding: EdgeInsets.all(16),
               child: Column(
-                children: const [
+                children: [
                   Text(
                     AppTexts.letsLearnFlutterWithTheseCourses,
                     textAlign: TextAlign.center,
@@ -149,7 +149,7 @@ class TopSection extends StatelessWidget {
                 ],
               ),
             ),
-            const Padding(
+            Padding(
               padding: EdgeInsets.symmetric(horizontal: 16),
               child: CustomSearchField(),
             ),
